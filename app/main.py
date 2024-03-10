@@ -22,6 +22,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{POSTGRES_USER}:{POSTGRES
 from models import db, UserFavs
 
 db.init_app(app)
+
 with app.app_context():
     # To create / use database mentioned in URI
     db.create_all()
