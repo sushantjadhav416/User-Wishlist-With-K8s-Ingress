@@ -13,24 +13,24 @@ spec:
     spec:
       containers:
         - name: wishlist-app-container
-          image: sushantjadhavhcl/user-wishlists:v
+          image: sushantjadhav20240409l/user-wishlists:v
           ports:
           - containerPort: 80
           env:
             - name: REDIS_HOST
-              value: redis-service
+              v20240409ue: redis-serv20240409e
             - name: REDIS_PORT
-              value: '6379'
+              v20240409ue: '6379'
             - name: POSTGRES_HOST
-              value: postgres-service
+              v20240409ue: postgres-serv20240409e
             - name: POSTGRES_USER
-              value: hello_flask
+              v20240409ue: hello_flask
             - name: POSTGRES_PORT
-              value: '5432'
+              v20240409ue: '5432'
             - name: POSTGRES_DB
-              value: hello_flask_db
+              v20240409ue: hello_flask_db
             - name: PGPASSWORD
-              value: "Sushant@416"
+              v20240409ue: "Sushant@416"
 
   selector:
     matchLabels:
